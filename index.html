@@ -156,9 +156,6 @@
   .promise__fig img { width: 100%; height: 100%; object-fit: cover; }
   @media (max-width: 860px) { .promise { grid-template-columns: 1fr; } }
 
-  /* ---- фото после обещаний (скриншот поиска на Яндекс.Картах) -------------------- */
-  .shot { max-width: 56rem; margin-inline: auto; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2), var(--v-edge); }
-  .shot img { display: block; width: 100%; height: auto; }
   /* ---- финал: запись без звонка ------------------------------------------------ */
   .close { min-height: 100svh; display: grid; grid-template-rows: 1fr auto; padding: clamp(6rem, 14vh, 9rem) var(--v-gutter) 0;
     background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), rgb(207 218 230 / .22), transparent 60%); }
@@ -362,14 +359,6 @@
       </div>
     </section>
 
-    <!-- 6а · ФОТО: скриншот поиска на Яндекс.Картах, по просьбе заказчика демо -->
-    <section class="v-section" data-v-act="flow" data-v-drift="#0c1118" aria-label="Скриншот поиска на Яндекс.Картах">
-      <div class="v-wrap" data-v-in>
-        <figure class="shot">
-          <img src="assets/poisk-karty.webp" alt="Результаты поиска «Шиномонтаж» на Яндекс.Картах" width="1212" height="992" loading="lazy" decoding="async">
-        </figure>
-      </div>
-    </section>
     <!-- 7 · ДЕЙСТВИЕ: запись без звонка -->
     <section data-v-act="flow" data-v-drift="#0a0e14" id="zapis" aria-label="Записаться">
       <div class="close" data-v-spotlight>
